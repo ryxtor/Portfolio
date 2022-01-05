@@ -32,6 +32,7 @@ a {
 .logo {
   display: flex;
   padding: 12px 24px 12px 24px;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
