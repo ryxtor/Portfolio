@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+
 body {
-  font-family: Inter, "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   margin: 0;
   padding: 0;
 }
 
 .container {
   display: flex;
-  border: 5px solid goldenrod;
   height: 100vh;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .header {
   background: #3C3A39;
 width: 100%;
@@ -26,12 +26,8 @@ justify-content: space-between;
 }
 
 .icon {
-  
-  
   display: flex;
-  
   padding: 12px 24px 12px 24px;
-  
 }
 
 .logo {
@@ -42,4 +38,53 @@ justify-content: space-between;
   font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.headline {
+  background-color: #1C1A19;
+  height: 100vh;
+}
+
+h1 {
+  color: #FF6B00;
+font-family: "Crete Round", sans-serif;
+font-size: 56px;
+line-height: 64px;
+letter-spacing: 0.37px;
+padding: 120px 24px 0px 24px;
+margin: 0;
+font-weight: normal;
+}
+
+h2 {
+  color: #FFF5e1;
+  padding: 12px 24px 0px 24px;
+  margin: 0;
+  font-family: Roboto;
+}
+
+p {
+  color: #FFFFFF;
+  padding: 12px 24px 0px 24px;
+margin: 0;
+font-family: poppins;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: flex-start;
+  padding: 12px 24px 0px 24px;
+  margin: 0;
+}
+
+li {
+  padding: 8px;
+}
+
+.headline {
+  background-image: url(src/illustration-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: 100% 55%;
 }
