@@ -88,24 +88,18 @@ i {
 .works {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   background-color: #e5e5e5;
   min-height: 100vh;
   width: 100%;
   grid-template-areas: 
   "Work-start"
-  "."
-  "."
-  "."
-  "."
-  "."
-  ".";
-}
-
-.works1 {
-  display: flex;
-  flex-direction: column;
-
+  "Project-1"
+  "Project-2"
+  "Project-3"
+  "Project-4"
+  "Project-5"
+  "Project-6";
 }
 
 h3 {
@@ -160,3 +154,61 @@ h4 {
   height: 48px;
   border: none;
 }
+
+.Project-1, .Project-2, .Project-3, .Project-4, .Project-5, .Project-6 {
+  display: flex;
+  position: relative;
+  margin: 24px;
+  flex-direction: column;
+  background-image: url(src/bg-project.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  justify-content: flex-end;
+}
+
+.title-p1, .title-p2, .title-p3, .title-p4, .title-p5, .title-p6 {
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #fff;
+  margin: 84px 16px 0px 16px;
+  padding: 0;
+}
+.p-Project-1, .p-Project-2, .p-Project-3, .p-Project-4, .p-Project-5, .p-Project-6 {
+  margin: 12px 16px 0px 16px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+}
+
+.ul-p1, .ul-p2, .ul-p3, .ul-p4, .ul-p5, .ul-p6 {
+  margin: 12px 0 0px 16px;
+  padding: 0;
+}
+
+.li-p1, .li-p2, .li-p3, .li-p4, .li-p5, .li-p6 {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin-right: 12px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.btn-p1, .btn-p2, .btn-p3, .btn-p4, .btn-p5, .btn-p6 {
+  width: 100%;
+  height: 48px;
+  margin: 12px 0 0 0;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: none;
+}
+
