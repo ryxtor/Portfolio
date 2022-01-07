@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
 body {
   margin: 0;
@@ -212,3 +212,99 @@ h4 {
   border: none;
 }
 
+.about-me {
+  height: 80vh;
+  
+  background-color: #1c1a19;
+  background-image: url(src/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+}
+
+.about-me-title {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  padding-top: 120px;
+}
+
+.about-me-p {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  padding: 24px;
+}
+
+.about-me-btn {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: none;
+  margin-left: 24px;
+  padding: 12px;
+}
+
+.solid {
+  margin: 180px 24px 0 24px;
+border-top: 0px;
+}
+
+.about-me2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #1c1a19;
+  
+}
+
+.square {
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 18px;
+  height: 18px;
+  align-self: center;
+  
+}
+
+.about-me-ul {
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.about-me-li {
+  color: white;
+  align-self: center;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 42.67px;
+  
+}
+.about-me-title-ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  margin: 0;
+}
+
+h6 {
+  font-family: InaiMathi, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 0;
+  padding-left: 12px;
+}
