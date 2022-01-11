@@ -169,7 +169,9 @@ h3 {
 .Project-6 {
   display: flex;
   position: relative;
+  width: 100%;
   margin: 24px;
+  flex-wrap: wrap;
   flex-direction: column;
   background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
@@ -197,11 +199,14 @@ h3 {
 }
 
 .ul-p {
+  width: 100%;
+  flex: 1 1 auto ;
   margin: 12px 0 0 16px;
   padding: 0;
 }
 
 .li-p {
+  float: left;
   font-family: Inter, sans-serif;
   font-weight: 500;
   font-size: 15px;
