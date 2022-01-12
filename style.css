@@ -396,3 +396,28 @@ h3 {
   padding: 12px;
   margin-top: 24px;
 }
+
+.hr-footer {
+  margin-block: 124px 15px;
+}
+
+.social-footer {
+  padding-top: 0;
+  justify-content: center;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.social-footer::after {
+  content: ' ';
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  position: absolute;
+  bottom: 8px;
+  margin-bottom: -26px;
+}
+
+.social-footer i {
+  color: #505F79;
+}
