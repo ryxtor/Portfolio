@@ -400,9 +400,9 @@ h3 {
 .hr-footer {
   margin-block: 124px 15px;
   border: none;
-  color: #DFE1E6;
+  color: #dfe1e6;
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
 }
 
 .social-footer {
@@ -423,5 +423,5 @@ h3 {
 }
 
 .social-footer i {
-  color: #505F79;
+  color: #505f79;
 }
