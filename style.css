@@ -339,3 +339,60 @@ h3 {
   color: #5b5957;
   border: none;
 }
+
+.footer {
+  padding: 120px 24px 0 24px;
+}
+
+.footer-title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer form input {
+  border: none;
+  box-sizing: border-box;
+  border-bottom: solid 1px #dbd8d7;
+  margin-bottom: 24px;
+  padding: 15px 16px;
+  height: 48px;
+}
+
+.footer form textarea {
+  height: 114px;
+  padding: 12px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #fbf8f7;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.footer form input::placeholder {
+  color: #979493;
+}
+
+.footer form textarea::placeholder {
+  color: #3c3a39;
+}
+
+.footer form button {
+  width: initial;
+  align-self: center;
+  padding: 12px;
+  margin-top: 24px;
+}
