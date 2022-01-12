@@ -399,6 +399,10 @@ h3 {
 
 .hr-footer {
   margin-block: 124px 15px;
+  border: none;
+  color: #DFE1E6;
+  height: 1px;
+  background-color: #DFE1E6;
 }
 
 .social-footer {
