@@ -23,7 +23,11 @@
 - Twitter: [@ryxtor](https://twitter.com/ryxtor)
 - LinkedIn: [Lucas Bonnefon](https://www.linkedin.com/in/lucas-bonnefon-074a01134/)
 
+👤 **Juan Luis Palacios**
 
+- GitHub: [@JuanLPalacios](https://github.com/JuanLPalacios)
+- Twitter: [@JuanLuisPalac20](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juan-luis-palacios-p%C3%A9rez-95b39a228/)
 
 ## 🤝 Contributing
 
