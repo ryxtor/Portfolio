@@ -97,20 +97,8 @@ i {
 
 .works {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   background-color: #e5e5e5;
-  min-height: 100vh;
   width: 100%;
-  grid-template-areas:
-
-    "Work-start"
-    "Project-1"
-    "Project-2"
-    "Project-3"
-    "Project-4"
-    "Project-5"
-    "Project-6";
 }
 
 .works-title {
@@ -183,7 +171,7 @@ h3 {
   flex-direction: column;
   background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   justify-content: flex-end;
 }
 
@@ -503,6 +491,90 @@ h3 {
     flex-direction: column;
     margin-top: 300px;
     max-width: min-content;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+
+      "work-start"
+      "project-container";
+  }
+
+  .work-start {
+    margin: 0 141px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "project-1 project-2 project-3"
+      "project-4 project-5 project-6";
+    margin: 0 141px;
+  }
+
+  .Project-1,
+  .Project-2,
+  .Project-3,
+  .Project-4,
+  .Project-5,
+  .Project-6 {
+    margin: 0 24px 24px 0;
+  }
+
+  .img-works {
+    width: 684px;
+    height: auto;
+    float: left;
+    padding-top: 114px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .works-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 114px;
+  }
+
+  .p-work {
+    max-width: 448px;
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  .works-title {
+    border: none;
+    min-width: 314px;
+  }
+
+  .works-title-2 {
+    padding: 0;
+  }
+
+  .works-info ul {
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  .see-project-btn {
+    padding: 0;
+    margin: 24px 0 0 0;
+  }
+
+  .works-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .border-work {
+    border-bottom: 1px solid #606163;
+    width: 80%;
   }
 }
 
