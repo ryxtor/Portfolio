@@ -171,8 +171,9 @@ h3 {
   flex-direction: column;
   background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 180%;
   justify-content: flex-end;
+  background-position: center;
 }
 
 .title-p {
@@ -345,6 +346,20 @@ h3 {
   background-color: #f4f1f0;
   color: #5b5957;
   border: none;
+}
+
+button {
+  transition: background-color 0.5s;
+}
+
+.Project-1:hover,
+.Project-2:hover,
+.Project-3:hover,
+.Project-4:hover,
+.Project-5:hover,
+.Project-6:hover {
+  transition: 1s;
+  background-size: 200%;
 }
 
 .footer {
