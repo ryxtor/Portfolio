@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
-@keyframes spin {
-  0%{
-    transform: rotate(0deg);
-  }
-  50%{
-    transform: rotate(180deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -57,10 +46,6 @@ li {
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
 }
 
 .headline {
