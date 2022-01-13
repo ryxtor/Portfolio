@@ -525,7 +525,8 @@ h3 {
   }
 
   .img-works {
-    width: 684px;
+    min-width: 50%;
+    max-width: 684px;
     height: auto;
     float: left;
     padding-top: 114px;
@@ -540,6 +541,7 @@ h3 {
   }
 
   .p-work {
+    min-width: 414px;
     max-width: 448px;
     padding: 0;
     margin-top: 24px;
@@ -561,7 +563,7 @@ h3 {
 
   .see-project-btn {
     padding: 0;
-    margin: 24px 0 0 0;
+    margin: 24px 0;
   }
 
   .works-title-container {
@@ -573,6 +575,36 @@ h3 {
   .border-work {
     border-bottom: 1px solid #606163;
     width: 80%;
+  }
+
+  .about-me {
+    background-image: url(src/illustration-about\ me.svg);
+    background-position: right top 8%;
+    padding: 0 142px 0 142px;
+  }
+
+  .about-me-p {
+    min-width: 40%;
+    max-width: 566px;
+  }
+
+  .about-me-ul-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-me-title-div {
+    justify-content: flex-start;
+  }
+
+  .about-me-ul {
+    width: 282px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-me-li {
+    align-self: flex-start;
   }
 }
 
