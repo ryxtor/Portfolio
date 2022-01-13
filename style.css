@@ -289,11 +289,22 @@ h3 {
   line-height: 42.67px;
 }
 
-.about-me-title-div {
-  display: flex;
+.language-list {
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  list-style-image: url(src/Rectangle-1.svg);
+  padding: 0;
+}
+
+.frameworks-list {
+  justify-content: center;
+  list-style-image: url(src/Rectangle-2.svg);
+  padding: 0;
+}
+
+.skills-list {
+  justify-content: center;
+  list-style-image: url(src/Rectangle-3.svg);
+  padding: 0;
 }
 
 .about-me-title-ul {
@@ -545,6 +556,9 @@ h3 {
     max-width: 448px;
     padding: 0;
     margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
   }
 
   .works-title {
@@ -554,6 +568,8 @@ h3 {
 
   .works-title-2 {
     padding: 0;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .works-info ul {
@@ -586,6 +602,8 @@ h3 {
   .about-me-p {
     min-width: 40%;
     max-width: 566px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .about-me-ul-container {
@@ -597,6 +615,18 @@ h3 {
     justify-content: flex-start;
   }
 
+  .language-list {
+    justify-content: flex-start;
+  }
+
+  .frameworks-list {
+    justify-content: flex-start;
+  }
+
+  .skills-list {
+    justify-content: flex-start;
+  }
+
   .about-me-ul {
     width: 282px;
     padding-right: 0;
@@ -605,6 +635,36 @@ h3 {
 
   .about-me-li {
     align-self: flex-start;
+  }
+
+  .about-me-title {
+    line-height: 81px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 130px 142px 0 142px;
+  }
+
+  .footer-title {
+    text-align: start;
+    min-width: 400px;
+    max-width: 455px;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .footer form {
+    width: 100%;
+  }
+
+  .footer form button {
+    align-self: flex-start;
+  }
+
+  .social-footer::after {
+    display: none;
   }
 }
 
