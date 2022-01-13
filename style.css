@@ -23,8 +23,22 @@ a {
   padding: 12px 24px 12px 24px;
 }
 
+li {
+  padding: 8px;
+}
+
+.nav-ul li {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  padding: 10px 12px;
+  margin: 0 6px;
+}
+
 .logo {
-  display: flex;
   padding: 12px 24px 12px 24px;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -76,10 +90,6 @@ ul {
   margin: 0;
 }
 
-li {
-  padding: 8px;
-}
-
 i {
   color: white;
   font-size: 24px;
@@ -87,20 +97,8 @@ i {
 
 .works {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   background-color: #e5e5e5;
-  min-height: 100vh;
   width: 100%;
-  grid-template-areas:
-
-    "Work-start"
-    "Project-1"
-    "Project-2"
-    "Project-3"
-    "Project-4"
-    "Project-5"
-    "Project-6";
 }
 
 .works-title {
@@ -173,7 +171,7 @@ h3 {
   flex-direction: column;
   background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   justify-content: flex-end;
 }
 
@@ -225,11 +223,10 @@ h3 {
 }
 
 .about-me {
-  height: 80vh;
   background-color: #1c1a19;
   background-image: url(src/illustration-about-me-mobile.svg);
   background-repeat: no-repeat;
-  background-position: 100% 90%;
+  background-position: right top 20%;
 }
 
 .about-me-title {
@@ -250,6 +247,7 @@ h3 {
   line-height: 24px;
   color: #f4f5f7;
   padding: 24px;
+  width: 327px;
 }
 
 .about-me-btn {
@@ -265,14 +263,8 @@ h3 {
 }
 
 .solid {
-  margin: 180px 24px 0 24px;
+  margin: 180px 24px 128px 24px;
   border-top: 0;
-}
-
-.about-me2 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  background-color: #1c1a19;
 }
 
 .square {
@@ -297,11 +289,22 @@ h3 {
   line-height: 42.67px;
 }
 
-.about-me-title-div {
-  display: flex;
+.language-list {
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  list-style-image: url(src/Rectangle-1.svg);
+  padding: 0;
+}
+
+.frameworks-list {
+  justify-content: center;
+  list-style-image: url(src/Rectangle-2.svg);
+  padding: 0;
+}
+
+.skills-list {
+  justify-content: center;
+  list-style-image: url(src/Rectangle-3.svg);
+  padding: 0;
 }
 
 .about-me-title-ul {
@@ -314,6 +317,10 @@ h3 {
   padding: 0 0 0 12px;
   color: #fff;
   border: none;
+}
+
+.ul-margin {
+  padding-bottom: 120px;
 }
 
 .see-project-btn:hover,
@@ -424,4 +431,245 @@ h3 {
 
 .social-footer i {
   color: #505f79;
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    height: 72px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .nav-ul {
+    margin: 0 142px 0 0;
+    padding: 16px 0;
+  }
+
+  .logo {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 12px;
+    margin: 16px 0 16px 142px;
+  }
+
+  .headline {
+    background-image: url(src/Illustration-header.svg);
+    display: flex;
+  }
+
+  .headline-div {
+    order: 1;
+  }
+
+  .headline-social-div {
+    width: 143px;
+  }
+
+  h1 {
+    padding: 192px 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .headline-title {
+    padding-left: 0;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .headline p {
+    padding-left: 0;
+    width: 566px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .headline ul {
+    float: left;
+    flex-direction: column;
+    margin-top: 300px;
+    max-width: min-content;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+
+      "work-start"
+      "project-container";
+  }
+
+  .work-start {
+    margin: 0 141px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "project-1 project-2 project-3"
+      "project-4 project-5 project-6";
+    margin: 0 141px;
+  }
+
+  .Project-1,
+  .Project-2,
+  .Project-3,
+  .Project-4,
+  .Project-5,
+  .Project-6 {
+    margin: 0 24px 24px 0;
+  }
+
+  .img-works {
+    min-width: 50%;
+    max-width: 684px;
+    height: auto;
+    float: left;
+    padding-top: 114px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .works-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 114px;
+  }
+
+  .p-work {
+    min-width: 414px;
+    max-width: 448px;
+    padding: 0;
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .works-title {
+    border: none;
+    min-width: 314px;
+  }
+
+  .works-title-2 {
+    padding: 0;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .works-info ul {
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  .see-project-btn {
+    padding: 0;
+    margin: 24px 0;
+  }
+
+  .works-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .border-work {
+    border-bottom: 1px solid #606163;
+    width: 80%;
+  }
+
+  .about-me {
+    background-image: url(src/illustration-about\ me.svg);
+    background-position: right top 8%;
+    padding: 0 142px 0 142px;
+  }
+
+  .about-me-p {
+    min-width: 40%;
+    max-width: 566px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-me-ul-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-me-title-div {
+    justify-content: flex-start;
+  }
+
+  .language-list {
+    justify-content: flex-start;
+  }
+
+  .frameworks-list {
+    justify-content: flex-start;
+  }
+
+  .skills-list {
+    justify-content: flex-start;
+  }
+
+  .about-me-ul {
+    width: 282px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-me-li {
+    align-self: flex-start;
+  }
+
+  .about-me-title {
+    line-height: 81px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 130px 142px 0 142px;
+  }
+
+  .footer-title {
+    text-align: start;
+    min-width: 400px;
+    max-width: 455px;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .footer form {
+    width: 100%;
+  }
+
+  .footer form button {
+    align-self: flex-start;
+  }
+
+  .social-footer::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-ul {
+    display: none;
+  }
 }

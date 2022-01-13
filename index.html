@@ -11,12 +11,20 @@
     <body>
         <header class="header">
           <nav class="logo"><a href="#">Lucas' Portfolio</a></nav>
+          <ul class="nav-ul">
+            <li><nav class="portfolio"><a href="#works">Portfolio</a></nav></li>
+          <li><nav class="about"><a href="#about-me">About</a></nav></li>
+          <li><nav class="contact"><a href="#contact">Contact</a></nav></li>
+          <li><a href="#"><i class="far fa-envelope"></i></a></li>
+        </ul>
+          
           <nav class="icon">
             <a href="#"><img src="src/Menu.svg" width="24" height="24" alt="Menu icon"></a>
           </nav>
         </header>
         <!--Headline Section-->
 <section class="headline">
+  <div class="headline-div">
     <h1>Hey There.<br/>
     I'm Lucas</h1>
     <h2 class="headline-title">I'm a Software Developer</h2>
@@ -24,6 +32,8 @@
       some of my work and experience! If you like what you see and have
        a project you need coded, don't hestiate to contact me.
     </p>
+  </div>
+  <div class="headline-social-div">
     <ul>
       <li>
         <a href="#"><i class="fab fa-github" title="github icon"></i></a>
@@ -41,12 +51,17 @@
         <a href="#"><i class="fab fa-medium-m" title="medium icon"></i></a>
       </li>
     </ul>
+  </div>
 </section>  
 <!--Works Section-->
-<section class="works">
-  <div class="Work-start">
+<section class="works" id="works">
+  <div class="work-start">
+    <div class="works-title-container">
   <h2 class="works-title">My Recent Works</h2>
-  <img class="img-works" width="327" height="237" alt="works image" src="src/Img-works.svg">
+  <div class="border-work"></div>
+</div>
+  <img class="img-works" width="327" height="237" alt="works image" src="src/Img%20Placeholder.svg">
+  <div class="works-info">
   <h3 class="works-title-2">Multi-Post Stories</h3>
   <p class="p-work">A daily selection of privately personalized reads; no accounts or sing-ups 
     required. has been the industry's standard dummy text ever since the 1500s,
@@ -60,6 +75,8 @@
   </ul>
   <button type="button" class="see-project-btn">See Project</button>
 </div>
+</div>
+<div class="project-container">
 <section class="Project-1">
   <h3 class="title-p">Profesional Art Printing Data</h3>
   <p class="p-Project">A daily selection of privately personalized reads; no accounts or 
@@ -137,9 +154,10 @@
   </ul>
   <button type="button" class="btn-p">See Project</button>  
 </section>
+</div>
 </section>
 <!--About me Section-->
-<section class="about-me">
+<section class="about-me" id="about-me">
   <h2 class="about-me-title">About Me</h2>
   <p class="about-me-p">
     Hello I'm a software developer! I can help you build a product, feature or website 
@@ -148,22 +166,22 @@
   </p>
   <button class="about-me-btn" type="button">Get My Resume</button>
   <hr class="solid">
-</section>
-  <section class="about-me2">
-  <div class="about-me-title-div">
-    <img src="src/Rectangle-1.svg" alt="diamond icon"  class="square">
-    <h3 class="about-me-title-ul">Language</h3>
-  </div>
+  <div class="about-me-ul-container">
+  <div>
+  <ul class="language-list">
+    <li class="about-me-title-ul">Language</li>
+  </ul>
   <ul class="about-me-ul">
     <li class="about-me-li">Javascript</li>
     <li class="about-me-li">Ruby</li>
     <li class="about-me-li">Html</li>
     <li class="about-me-li">Css</li>
   </ul>
-  <div class="about-me-title-div">
-    <img src="src/Rectangle-2.svg" alt="square icon" class="square">
-    <h3 class="about-me-title-ul">Frameworks</h3>
-  </div>
+</div>
+<div>
+  <ul class="frameworks-list">
+    <li class="about-me-title-ul">Frameworks</li>
+  </ul>
   <ul class="about-me-ul">
     <li class="about-me-li">Bootstrap</li>
     <li class="about-me-li">Ruby on Rails</li>
@@ -171,20 +189,23 @@
     <li class="about-me-li">CapyBara</li>
     <li class="about-me-li">Selenium</li>
   </ul>
-  <div class="about-me-title-div">
-    <img src="src/Rectangle-3.svg" alt="circle icon" class="square">
-    <h3 class="about-me-title-ul">Skills</h3>
-  </div>
-  <ul class="about-me-ul">
+</div>
+<div>
+  <ul class="skills-list">
+    <li class="about-me-title-ul">Skills</li>
+  </ul>
+  <ul class="about-me-ul ul-margin">
     <li class="about-me-li">Codekit</li>
     <li class="about-me-li">Github</li>
     <li class="about-me-li">Codepen</li>
     <li class="about-me-li">Gitlab</li>
     <li class="about-me-li">Terminal</li>
   </ul>
+</div>
+</div>
 </section>
 <footer>
-  <section class="footer" >
+  <section class="footer" id="contact">
   <h3 class="footer-title">I'm always interested in hearing about new projects,
      so if you'd like to chat please get in touch.
     </h3>
