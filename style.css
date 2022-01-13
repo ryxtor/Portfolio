@@ -223,11 +223,10 @@ h3 {
 }
 
 .about-me {
-  height: 80vh;
   background-color: #1c1a19;
   background-image: url(src/illustration-about-me-mobile.svg);
   background-repeat: no-repeat;
-  background-position: 100% 90%;
+  background-position: right top 20%;
 }
 
 .about-me-title {
@@ -248,6 +247,7 @@ h3 {
   line-height: 24px;
   color: #f4f5f7;
   padding: 24px;
+  width: 327px;
 }
 
 .about-me-btn {
@@ -263,14 +263,8 @@ h3 {
 }
 
 .solid {
-  margin: 180px 24px 0 24px;
+  margin: 180px 24px 128px 24px;
   border-top: 0;
-}
-
-.about-me2 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  background-color: #1c1a19;
 }
 
 .square {
@@ -312,6 +306,10 @@ h3 {
   padding: 0 0 0 12px;
   color: #fff;
   border: none;
+}
+
+.ul-margin {
+  padding-bottom: 120px;
 }
 
 .see-project-btn:hover,
