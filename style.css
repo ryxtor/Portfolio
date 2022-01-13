@@ -171,8 +171,9 @@ h3 {
   flex-direction: column;
   background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 180%;
   justify-content: flex-end;
+  background-position: center;
 }
 
 .title-p {
@@ -347,6 +348,20 @@ h3 {
   border: none;
 }
 
+button {
+  transition: background-color 0.5s;
+}
+
+.Project-1:hover,
+.Project-2:hover,
+.Project-3:hover,
+.Project-4:hover,
+.Project-5:hover,
+.Project-6:hover {
+  transition: 1s;
+  background-size: 200%;
+}
+
 .footer {
   padding: 120px 24px 0 24px;
 }
@@ -387,6 +402,12 @@ h3 {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+}
+
+.footer form input:hover,
+.footer form textarea:hover {
+  transition: 0.5s;
+  padding-left: 25px;
 }
 
 .footer form input::placeholder {
