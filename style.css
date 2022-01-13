@@ -391,12 +391,6 @@ button {
   height: 48px;
 }
 
-.footer form input:hover,
-.footer form textarea:hover {
-  transition: .5s;
-  padding-left: 25px;
-}
-
 .footer form textarea {
   height: 114px;
   padding: 12px;
@@ -408,6 +402,12 @@ button {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+}
+
+.footer form input:hover,
+.footer form textarea:hover {
+  transition: 0.5s;
+  padding-left: 25px;
 }
 
 .footer form input::placeholder {
