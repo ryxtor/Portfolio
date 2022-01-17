@@ -149,7 +149,7 @@ h3 {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: white;
+  color: #081f43;
   background-color: #ff6b00;
   padding: 12px;
   margin-top: 12px;
@@ -218,7 +218,7 @@ h3 {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #fff;
+  color: #081f43;
   background-color: #ff6b00;
   border: none;
 }
@@ -256,7 +256,7 @@ h3 {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #fff;
+  color: #081f43;
   background-color: #ff6b00;
   border: none;
   margin-left: 24px;
@@ -329,14 +329,14 @@ h3 {
 .about-me-btn:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
-  color: #f55800;
+  color: #081f43;;
 }
 
 .see-project-btn:active,
 .btn-p:active,
 .about-me-btn:active {
   background-color: #e05304;
-  color: #f4f1f0;
+  color: #081f43;;
   border: none;
 }
 
