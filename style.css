@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +21,7 @@ a {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 1;
 }
 
 .icon {
@@ -709,6 +714,9 @@ button {
 }
 
 .m-menu-content a {
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  line-height: 44px;
   padding: 24px 0 15px 16px;
   text-decoration: none;
   font-size: 32px;
@@ -716,12 +724,18 @@ button {
   display: block;
 }
 
+.m-menu-content hr {
+  border: none;
+  border-top: 1px solid #6f6c6b;
+  margin: 0;
+}
+
 .m-menu .closebtn {
   position: absolute;
   top: 62px;
   font-size: 32px;
   text-decoration: none;
-  color: #fff5e1;
+  color: #67798e7c;
   right: 38px;
   width: 12px;
   height: 12px;
