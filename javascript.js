@@ -1,8 +1,7 @@
+function openNav() {
+  document.querySelector('#mobile-menu').style.height = '100%';
+}
 
-function openNav() { 
-    document.querySelector("#mobile-menu").style.height = "100%"; 
-} 
-
-function closeNav() { 
-    document.querySelector("#mobile-menu").style.height = "0%"; 
-} 
+function closeNav() {
+  document.querySelector('#mobile-menu').style.height = '0%';
+}
