@@ -175,7 +175,6 @@ h3 {
   position: relative;
   margin: 24px;
   flex-direction: column;
-  background-image: url(src/bg-project.svg);
   background-repeat: no-repeat;
   background-size: 180%;
   justify-content: flex-end;
