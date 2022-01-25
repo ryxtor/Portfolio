@@ -17,7 +17,7 @@
 
           gtag('config', 'G-KKTPV8FFD1');
         </script>
-        <script src="javascript.js"></script>
+        
         <script src="https://kit.fontawesome.com/77c001a55d.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -30,19 +30,19 @@
           <li><a href="#"><i class="far fa-envelope" title="email"></i></a></li>
         </ul>
           
-          <nav class="icon">
-            <a onclick="openNav()" href="javascript:void(0)"><img src="src/Menu.svg" width="24" height="24" alt="Menu icon"></a>
+          <nav id="open-menu" class="icon">
+            <a  href="javascript:void(0)"><img src="src/Menu.svg" width="24" height="24" alt="Menu icon"></a>
           </nav>
         </header>
         <!--Mobile Menu-->
         <div id="mobile-menu" class="m-menu">
-          <a onclick="closeNav()" href="javascript:void(0)" class="closebtn">&times;</a>
+          <a id="close-nav" href="javascript:void(0)" class="closebtn">&times;</a>
           <div class="m-menu-content">
-            <a onclick="closeNav()" href="#works">Portfolio</a>
+            <a id="close-nav1" href="#works">Portfolio</a>
             <hr>
-            <a onclick="closeNav()" href="#about-me">About</a>
+            <a id="close-nav2" href="#about-me">About</a>
             <hr>
-            <a onclick="closeNav()" href="#contact">Contact</a>
+            <a id="close-nav3" href="#contact">Contact</a>
             <hr>
           </div>
         </div>
@@ -261,5 +261,6 @@
     </ul>
   </div>
   </footer>
+  <script src="javascript.js"></script>
     </body>
 </html>
