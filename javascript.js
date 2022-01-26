@@ -149,14 +149,18 @@ function popup(num) {
       <li class="li-p li-pu">${projectsArray[num].tecnologies[1]}</li>  
       <li class="li-p li-pu">${projectsArray[num].tecnologies[2]}</li>
     </ul>
+    <div class="flex-popup">
     <img class="popup-img" src=${projectsArray[num].imagepopup}
     alt="popup image" width="311" height="220"></img>
+    <div class="popup-right">
     <p class="p-Project p-popup">${projectsArray[num].popupdescription}</p>
     <div class="popup-btn-container">
     <button type="button" class="popup-btn" href=${projectsArray[num].live}>
     See Live <i class="fas fa-external-link-alt darkicon"></i></button>
     <button type="button" class="popup-btn btn-ml" href=${projectsArray[num].source}>
     See Source <i class="fab fa-github darkicon" title="github icon"></i></button>
+    </div>
+    </div>
     </div>
   </div>`;
 
@@ -166,12 +170,12 @@ function popup(num) {
       startpopup.removeChild(startpopup.lastChild);
     }
   }
-  
+
   document.getElementById('close-popup').addEventListener('click', () => {
     erase();
   });
 }
-  document.getElementById('recentWork').innerHTML = `
+document.getElementById('recentWork').innerHTML = `
 <img class="img-works" width="327" height="237" alt="works image" src=${projectsArray[6].image}>
 <div class="works-info">
 <h3 class="works-title-2">${projectsArray[6].title}</h3>
@@ -185,7 +189,7 @@ function popup(num) {
 <button type="button" id="btn-project-work" class="see-project-btn">See Project</button>
 </div>`;
 
-  document.getElementById('projects').innerHTML = `
+document.getElementById('projects').innerHTML = `
 <section class="Project-1" id="project-1"> 
  <h3 class="title-p">${projectsArray[0].title}</h3>
 <p class="p-Project">${projectsArray[0].paragraph}
@@ -262,15 +266,12 @@ function popup(num) {
 <button type="button" id="btn-project-6" class="btn-p">See Project</button>
 </section>`;
 
-  document.getElementById('project-1').style.backgroundImage = projectsArray[0].image;
-  document.getElementById('project-2').style.backgroundImage = projectsArray[1].image;
-  document.getElementById('project-3').style.backgroundImage = projectsArray[2].image;
-  document.getElementById('project-4').style.backgroundImage = projectsArray[3].image;
-  document.getElementById('project-5').style.backgroundImage = projectsArray[4].image;
-  document.getElementById('project-6').style.backgroundImage = projectsArray[5].image;
-
-
-
+document.getElementById('project-1').style.backgroundImage = projectsArray[0].image;
+document.getElementById('project-2').style.backgroundImage = projectsArray[1].image;
+document.getElementById('project-3').style.backgroundImage = projectsArray[2].image;
+document.getElementById('project-4').style.backgroundImage = projectsArray[3].image;
+document.getElementById('project-5').style.backgroundImage = projectsArray[4].image;
+document.getElementById('project-6').style.backgroundImage = projectsArray[5].image;
 
 document.getElementById('btn-project-1').addEventListener('click', () => {
   popup(0);

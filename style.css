@@ -836,13 +836,12 @@ button {
 
 @media screen and (min-width: 992px) {
   .popup-container {
-    display: inline;
+    display: block;
     margin: 112px 142px;
     width: calc(100% - 284px);
   }
 
   .popup-img {
-    float: left;
     min-width: 50%;
     max-width: 100%;
     height: auto;
@@ -851,13 +850,11 @@ button {
 
   .p-popup {
     margin: 40px 25px;
-    height: 300px;
     line-height: 30px;
   }
 
   .popup-btn-container {
-    justify-content: center;
-    align-self: center;
+    justify-content: flex-start;
   }
 
   .title-pu {
@@ -877,5 +874,10 @@ button {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .flex-popup {
+    display: flex;
   }
 }
