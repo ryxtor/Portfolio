@@ -547,8 +547,8 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "project-1 project-2 project-3"
-      "project-4 project-5 project-6";
+      "Project-1 Project-2 Project-3"
+      "Project-4 project-5 Project-6";
     margin: 0 141px;
   }
 
