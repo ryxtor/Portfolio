@@ -103,6 +103,24 @@ const project5 = {
   source: '#',
 };
 
+const recentWorks = {
+  image: 'src/Img%20Placeholder.svg',
+  title: 'Multi-Post Stories',
+  paragraph: `A daily selection of privately personalized reads; 
+  no accounts or sing-ups required. has been the industry's standard 
+  dummy text ever since the 1500s, when an unknown printer took a standerd dummy text.`,
+  popupdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting 
+  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+  1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
+   releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+    unknown printer took a galley of type and scrambled it 1960s with the releax map 
+    lapora verita.`,
+  tecnologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+  live: '#',
+  source: '#',
+};
+
 const projectsArray = [
   project0,
   project1,
@@ -110,9 +128,22 @@ const projectsArray = [
   project3,
   project4,
   project5,
+  recentWorks,
 ];
 
-
+document.getElementById('recentWork').innerHTML = `
+<img class="img-works" width="327" height="237" alt="works image" src=${projectsArray[6].image}>
+<div class="works-info">
+<h3 class="works-title-2">${projectsArray[6].title}</h3>
+<p class="p-work">${projectsArray[6].paragraph}</p>
+<ul>
+  <li class="li2">${projectsArray[6].tecnologies[0]}</li>
+  <li class="li2">${projectsArray[6].tecnologies[1]}</li>
+  <li class="li2">${projectsArray[6].tecnologies[2]}</li>
+  <li class="li2">${projectsArray[6].tecnologies[3]}</li>
+</ul>
+<button type="button" class="see-project-btn">See Project</button>
+</div>`;
 
 document.getElementById('projects').innerHTML = `
 <section class="Project-1" id="project-1"> 
