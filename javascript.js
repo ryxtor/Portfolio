@@ -14,7 +14,7 @@ document.getElementById('close-nav2').onclick = closeNav;
 document.getElementById('close-nav3').onclick = closeNav;
 
 const project0 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -30,7 +30,7 @@ const project0 = {
 };
 
 const project1 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -46,7 +46,7 @@ const project1 = {
 };
 
 const project2 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -62,7 +62,7 @@ const project2 = {
 };
 
 const project3 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -78,7 +78,7 @@ const project3 = {
 };
 
 const project4 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -94,7 +94,7 @@ const project4 = {
 };
 
 const project5 = {
-  title: 'Profesional Art<br>Printing Data',
+  title: 'Profesional Art Printing Data',
   paragraph: `A daily selection of privately personalized reads;
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
@@ -141,7 +141,7 @@ const projectsArray = [
 function popup(num) {
   document.getElementById('popup').innerHTML = `
   <div class="darkpage"></div>
-  <div class="popup-container">
+  <div class="popup-container" >
     <button id="close-popup" class="close-pu" type="button">&times;</button>
     <h3 class="works-title-2 title-pu">${projectsArray[num].title}</h3>
     <ul class="ul-p ul-pu">  
@@ -164,11 +164,13 @@ function popup(num) {
     </div>
   </div>`;
 
+document.querySelector('html').style.overflow = 'hidden';
   const startpopup = document.getElementById('popup');
   function erase() {
     while (startpopup.firstChild) {
       startpopup.removeChild(startpopup.lastChild);
     }
+    document.querySelector('html').style.overflow = 'scroll';
   }
 
   document.getElementById('close-popup').addEventListener('click', () => {
