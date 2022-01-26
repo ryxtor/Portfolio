@@ -264,3 +264,30 @@ document.getElementById('project-3').style.backgroundImage = projectsArray[2].im
 document.getElementById('project-4').style.backgroundImage = projectsArray[3].image;
 document.getElementById('project-5').style.backgroundImage = projectsArray[4].image;
 document.getElementById('project-6').style.backgroundImage = projectsArray[5].image;
+
+document.getElementById('close-popup').addEventListener('click', () => {
+  erase();
+});
+}
+
+document.getElementById('btn-project-1').addEventListener('click', () => {
+popup(0);
+});
+document.getElementById('btn-project-2').addEventListener('click', () => {
+popup(1);
+});
+document.getElementById('btn-project-3').addEventListener('click', () => {
+popup(2);
+});
+document.getElementById('btn-project-4').addEventListener('click', () => {
+popup(3);
+});
+document.getElementById('btn-project-5').addEventListener('click', () => {
+popup(4);
+});
+document.getElementById('btn-project-6').addEventListener('click', () => {
+popup(5);
+});
+document.getElementById('btn-project-work').addEventListener('click', () => {
+popup(6);
+});
