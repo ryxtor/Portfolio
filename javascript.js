@@ -138,6 +138,35 @@ const projectsArray = [
   recentWorks,
 ];
 
+function popup(num) {
+  document.getElementById('popup').innerHTML = `
+  <div class="darkpage"></div>
+  <div class="popup-container">
+    <button id="close-popup" class="close-pu" type="button">&times;</button>
+    <h3 class="works-title-2 title-pu">${projectsArray[num].title}</h3>
+    <ul class="ul-p ul-pu">  
+      <li class="li-p li-pu">${projectsArray[num].tecnologies[0]}</li>  
+      <li class="li-p li-pu">${projectsArray[num].tecnologies[1]}</li>  
+      <li class="li-p li-pu">${projectsArray[num].tecnologies[2]}</li>
+    </ul>
+    <img class="popup-img" src=${projectsArray[num].imagepopup}
+    alt="popup image" width="311" height="220"></img>
+    <p class="p-Project p-popup">${projectsArray[num].popupdescription}</p>
+    <div class="popup-btn-container">
+    <button type="button" class="popup-btn" href=${projectsArray[num].live}>
+    See Live <i class="fas fa-external-link-alt darkicon"></i></button>
+    <button type="button" class="popup-btn btn-ml" href=${projectsArray[num].source}>
+    See Source <i class="fab fa-github darkicon" title="github icon"></i></button>
+    </div>
+  </div>`;
+ 
+  const startpopup = document.getElementById('popup');
+  function erase() {
+    while (startpopup.firstChild) {
+      startpopup.removeChild(startpopup.lastChild);
+    }
+  }
+
 document.getElementById('recentWork').innerHTML = `
 <img class="img-works" width="327" height="237" alt="works image" src=${projectsArray[6].image}>
 <div class="works-info">
