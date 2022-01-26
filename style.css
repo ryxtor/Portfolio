@@ -746,7 +746,6 @@ button {
   }
 }
 
- 
 .popup-container {
   display: flex;
   flex-direction: column;
@@ -757,16 +756,16 @@ button {
   margin: 40px 16px 0 16px;
   background-color: #fff;
 }
- 
+
 .popup-img {
   margin: 24px 16px;
 }
- 
+
 .p-popup {
   color: #344563;
   margin: 0 16px;
 }
- 
+
 .li-pu {
   font-family: Poppins, sans-serif;
   color: #3c3a39;
@@ -775,14 +774,14 @@ button {
   border: 1px solid #979493;
   background-color: #fff;
 }
- 
+
 .title-pu {
   padding-top: 16px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   color: #172b4d;
 }
- 
+
 .close-pu {
   position: absolute;
   top: 30px;
@@ -793,7 +792,7 @@ button {
   padding: 0;
   cursor: pointer;
 }
- 
+
 .popup-btn {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
@@ -806,27 +805,27 @@ button {
   padding: 12px;
   cursor: pointer;
 }
- 
+
 .btn-ml {
   margin-left: 19px;
 }
- 
+
 .popup-btn-container {
   display: flex;
   justify-content: center;
   margin: 16px 16px 20px 16px;
 }
- 
+
 .popup-btn:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
- 
+
 .popup-btn:hover .darkicon {
   color: #f55800;
 }
- 
+
 .darkpage {
   position: fixed;
   width: 100%;
@@ -834,14 +833,14 @@ button {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.75);
 }
- 
+
 @media screen and (min-width: 992px) {
   .popup-container {
     display: inline;
     margin: 112px 142px;
     width: calc(100% - 284px);
   }
- 
+
   .popup-img {
     float: left;
     min-width: 50%;
@@ -849,18 +848,18 @@ button {
     height: auto;
     margin: 40px 25px 27px 25px;
   }
- 
+
   .p-popup {
     margin: 40px 25px;
     height: 300px;
     line-height: 30px;
   }
- 
+
   .popup-btn-container {
     justify-content: center;
     align-self: center;
   }
- 
+
   .title-pu {
     margin-left: 24px;
     font-family: "Crete Round", sans-serif;
@@ -869,11 +868,11 @@ button {
     font-weight: 400;
     padding-top: 24px;
   }
- 
+
   .ul-pu {
     margin-left: 25px;
   }
- 
+
   .popup-right {
     display: flex;
     flex-direction: column;
