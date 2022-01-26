@@ -19,6 +19,7 @@ const project0 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -34,6 +35,7 @@ const project1 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -49,6 +51,7 @@ const project2 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -64,6 +67,7 @@ const project3 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -79,6 +83,7 @@ const project4 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -94,6 +99,7 @@ const project5 = {
    no accounts or sign-ups required. has been the industry's standard`,
   tecnologies: ['HTML', 'Bootstrap', 'Ruby'],
   image: 'url(src/bg-project.svg)',
+  imagepopup: 'src/project-popup.svg',
   popupdescription: `Lorem Ipsum is simply dummy text of the printing and 
   typesetting industry. Lorem Ipsum has been the industry's standard dummy 
   text ever since the 1500s, when an unknown printer took a galley of type 
@@ -105,6 +111,7 @@ const project5 = {
 
 const recentWorks = {
   image: 'src/Img%20Placeholder.svg',
+  imagepopup: 'src/project-popup.svg',
   title: 'Multi-Post Stories',
   paragraph: `A daily selection of privately personalized reads; 
   no accounts or sing-ups required. has been the industry's standard 
