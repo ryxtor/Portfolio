@@ -164,7 +164,7 @@ function popup(num) {
     </div>
   </div>`;
 
-document.querySelector('html').style.overflow = 'hidden';
+  document.querySelector('html').style.overflow = 'hidden';
   const startpopup = document.getElementById('popup');
   function erase() {
     while (startpopup.firstChild) {
