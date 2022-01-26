@@ -163,6 +163,7 @@ h3 {
   width: 124px;
   height: 48px;
   border: none;
+  cursor: pointer;
 }
 
 .Project-1,
@@ -226,6 +227,7 @@ h3 {
   color: #081f43;
   background-color: #ff6b00;
   border: none;
+  cursor: pointer;
 }
 
 .about-me {
@@ -266,6 +268,7 @@ h3 {
   border: 1px solid #ff6b00;
   margin-left: 24px;
   padding: 12px;
+  cursor: pointer;
 }
 
 .solid {
@@ -305,12 +308,14 @@ h3 {
   justify-content: center;
   list-style-image: url(src/Rectangle-2.svg);
   padding: 0;
+  margin-top: 80px;
 }
 
 .skills-list {
   justify-content: center;
   list-style-image: url(src/Rectangle-3.svg);
   padding: 0;
+  margin-top: 80px;
 }
 
 .about-me-title-ul {
@@ -647,10 +652,12 @@ button {
 
   .frameworks-list {
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   .skills-list {
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   .about-me-ul {
@@ -738,6 +745,15 @@ button {
   right: 38px;
   width: 12px;
   height: 12px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.btn-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
