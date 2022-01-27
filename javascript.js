@@ -279,3 +279,16 @@ function upperCaseError() {
   document.getElementById('error-message').innerHTML = 'Please write the email in <b>lowercase</b> and try again.';
   document.getElementById('email').style.border = '1px solid red';
 }
+
+function upperCaseCheck() {
+  const emailValue = document.getElementById('email').value.split('');
+
+  for (let i = 0; i < emailValue.length; i += 1) {
+    if (emailValue[i].match(/[a-z]/i) && emailValue[i] === emailValue[i].toUpperCase()) {
+      document.getElementById('error-message').style.visibility = 'visible';
+      upperCaseError();
+      return false;
+    }
+  }
+  return true;
+}
