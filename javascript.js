@@ -158,7 +158,7 @@ function closepopup() {
     while (startpopup.firstChild) {
       startpopup.removeChild(startpopup.lastChild);
     }
-    document.querySelector('html').style.overflow = 'scroll';
+    document.querySelector('html').style.overflow = 'auto';
   }
 
   document.getElementById('close-popup').addEventListener('click', () => {
