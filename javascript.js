@@ -1,3 +1,4 @@
+// Mobile menu
 function openNav() {
   document.querySelector('#mobile-menu').style.height = '100%';
 }
@@ -13,6 +14,7 @@ document.getElementById('close-nav1').onclick = closeNav;
 document.getElementById('close-nav2').onclick = closeNav;
 document.getElementById('close-nav3').onclick = closeNav;
 
+// JavaScript Objects
 const recentWorks = {
   image: 'src/Img%20Placeholder.svg',
   imagepopup: 'src/project-popup.svg',
@@ -148,6 +150,7 @@ const projectsArray = [
   },
 ];
 
+// Popup functions
 function closepopup() {
   document.querySelector('html').style.overflow = 'hidden';
   const startpopup = document.getElementById('popup');
@@ -222,6 +225,7 @@ function popuprecentwork() {
   closepopup();
 }
 
+// Write projects on HTML
 document.getElementById('recentWork').innerHTML = `
 <img class="img-works" width="327" height="237" alt="works image" src=${recentWorks.image}>
 <div class="works-info">
@@ -253,13 +257,14 @@ function writeProjects(item) {
 }
 
 projectsArray.forEach((project) => {
-  const elementss = document.createElement('div');
-  elementss.innerHTML = writeProjects(project);
-  document.getElementById('projects').appendChild(elementss);
+  const elements = document.createElement('div');
+  elements.innerHTML = writeProjects(project);
+  document.getElementById('projects').appendChild(elements);
 });
 
 projectsArray.forEach((image, i) => { document.getElementById(`project-${i + 1}`).style.backgroundImage = projectsArray[i].image; });
 
+// Event Listener to open the Popup
 projectsArray.forEach((project, i) => {
   document.getElementById(`btn-project-${i + 1}`).addEventListener('click', () => {
     popup(i);
