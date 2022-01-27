@@ -274,3 +274,8 @@ projectsArray.forEach((project, i) => {
 document.getElementById('btn-project-works').addEventListener('click', () => {
   popuprecentwork();
 });
+
+function upperCaseError() {
+  document.getElementById('error-message').innerHTML = 'Please write the email in <b>lowercase</b> and try again.';
+  document.getElementById('email').style.border = '1px solid red';
+}
