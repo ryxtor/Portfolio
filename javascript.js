@@ -296,3 +296,9 @@ function upperCaseCheck() {
 document.getElementById('form').onsubmit = function check() {
   return upperCaseCheck();
 };
+
+const formContent = {
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  message: document.getElementById('message').value,
+};
