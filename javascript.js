@@ -296,3 +296,33 @@ function upperCaseCheck() {
 document.getElementById('form').onsubmit = function check() {
   return upperCaseCheck();
 };
+
+function formStorage() {
+  const formContent = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  localStorage.setItem('data', JSON.stringify(formContent));
+}
+
+document.getElementById('name').onchange = formStorage;
+document.getElementById('email').onchange = formStorage;
+document.getElementById('message').onchange = formStorage;
+
+const getData = localStorage.getItem('data');
+
+if (getData) {
+  const getName = JSON.parse(getData).name;
+  const getEmail = JSON.parse(getData).email;
+  const getMessage = JSON.parse(getData).message;
+  if (getName) {
+    document.getElementById('name').value = JSON.parse(getData).name;
+  }
+  if (getEmail) {
+    document.getElementById('email').value = JSON.parse(getData).email;
+  }
+  if (getMessage) {
+    document.getElementById('message').value = JSON.parse(getData).message;
+  }
+}
