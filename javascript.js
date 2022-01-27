@@ -297,8 +297,15 @@ document.getElementById('form').onsubmit = function check() {
   return upperCaseCheck();
 };
 
-const formContent = {
-  name: document.getElementById('name').value,
-  email: document.getElementById('email').value,
-  message: document.getElementById('message').value,
-};
+function formStorage() {
+  const formContent = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  localStorage.setItem('data', JSON.stringify(formContent));
+}
+
+document.getElementById('name').onchange = formStorage;
+document.getElementById('email').onchange = formStorage;
+document.getElementById('message').onchange = formStorage;
