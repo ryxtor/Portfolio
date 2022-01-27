@@ -146,11 +146,12 @@
   <h3 class="footer-title">I'm always interested in hearing about new projects,
      so if you'd like to chat please get in touch.
     </h3>
-    <form action="https://formspree.io/f/xdobaodo" method="post">
+    <form id="form" action="https://formspree.io/f/xdobaodo" method="post">
       <input type="text" maxlength="30" placeholder="Full name" name="name" required>
-      <input type="email" placeholder="Email address" name="email" required>
+      <input type="email" placeholder="Email address" id="email" name="email" required>
       <textarea maxlength="500" placeholder="Enter text here" name="message" required></textarea>
       <button class="btn-p" type="submit">Get in touch</button>
+      <p id="error-message" class="error-form"></p>
     </form>
   </section>
   <hr class="hr-footer">

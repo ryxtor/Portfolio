@@ -177,9 +177,11 @@ h3 {
   margin: 24px;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-size: 180%;
+  background-size: 140%;
   justify-content: flex-end;
   background-position: center;
+  height: calc(100% - 24px);
+  width: calc(100% - 24px);
 }
 
 .title-p {
@@ -896,4 +898,9 @@ button {
   .flex-popup {
     display: flex;
   }
+}
+
+.error-form {
+  color: #f00;
+  visibility: hidden;
 }
