@@ -180,8 +180,6 @@ h3 {
   background-size: 140%;
   justify-content: flex-end;
   background-position: center;
-  height: calc(100% - 24px);
-  width: calc(100% - 24px);
 }
 
 .title-p {
@@ -566,6 +564,8 @@ button {
   .Project-5,
   .Project-6 {
     margin: 0 24px 24px 0;
+    height: calc(100% - 24px);
+    width: calc(100% - 24px);
   }
 
   .img-works {
