@@ -292,3 +292,7 @@ function upperCaseCheck() {
   }
   return true;
 }
+
+document.getElementById('form').onsubmit = function check() {
+  return upperCaseCheck();
+};

@@ -897,3 +897,8 @@ button {
     display: flex;
   }
 }
+
+.error-form {
+  color: #f00;
+  visibility: hidden;
+}
