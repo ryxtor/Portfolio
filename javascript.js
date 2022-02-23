@@ -16,22 +16,19 @@ document.getElementById('close-nav3').onclick = closeNav;
 
 // JavaScript Objects
 const recentWorks = {
-  image: 'src/Img%20Placeholder.svg',
-  imagepopup: 'src/project-popup.svg',
-  title: 'Multi-Post Stories',
-  paragraph: `A daily selection of privately personalized reads; 
-  no accounts or sing-ups required. has been the industry's standard 
-  dummy text ever since the 1500s, when an unknown printer took a standerd dummy text.`,
-  popupdescription: `Lorem Ipsum is simply dummy text of the printing and typesetting 
-  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
-  1500s, when an unknown printer took a galley of type and scrambled it 1960s with the
-   releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-    Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-    unknown printer took a galley of type and scrambled it 1960s with the releax map 
-    lapora verita.`,
-  tecnologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-  live: '#',
-  source: '#',
+  image: 'src/todo-list.png',
+  imagepopup: 'src/todo-list.png',
+  title: 'To-Do List',
+  paragraph: `In this project you can add, remove, edit, mark as completed and 
+  remove all completed task. All data are saved in your local storage.`,
+  popupdescription: `In this project you can add a task writting and pressing
+  enter or clicking on the enter icon, remove with the trash icon, edit the task
+   with just a click on it and start editing, mark as completed clicking on the 
+   checkbox and remove all completed task with just a click on the 'Clear all
+   completed' button. All data are saved in your local storage.`,
+  tecnologies: ['CSS', 'HTML', 'JavaScript'],
+  live: 'https://ryxtor.github.io/To-Do-List/dist',
+  source: 'https://github.com/ryxtor/To-Do-List',
 };
 
 const projectsArray = [
@@ -205,7 +202,6 @@ function popuprecentwork() {
       <li class="li-p li-pu">${recentWorks.tecnologies[0]}</li>  
       <li class="li-p li-pu">${recentWorks.tecnologies[1]}</li>  
       <li class="li-p li-pu">${recentWorks.tecnologies[2]}</li>
-      <li class="li-p li-pu">${recentWorks.tecnologies[3]}</li>
     </ul>
     <div class="flex-popup">
     <img class="popup-img" src=${recentWorks.imagepopup}
@@ -213,10 +209,10 @@ function popuprecentwork() {
     <div class="popup-right">
     <p class="p-Project p-popup">${recentWorks.popupdescription}</p>
     <div class="popup-btn-container">
-    <button type="button" class="popup-btn" href=${recentWorks.live}>
-    See Live <i class="fas fa-external-link-alt darkicon"></i></button>
-    <button type="button" class="popup-btn btn-ml" href=${recentWorks.source}>
-    See Source <i class="fab fa-github darkicon" title="github icon"></i></button>
+    <a class="popup-btn" href=${recentWorks.live}>
+    See Live <i class="fas fa-external-link-alt darkicon"></i></a>
+    <a class="popup-btn btn-ml" href=${recentWorks.source}>
+    See Source <i class="fab fa-github darkicon" title="github icon"></i></a>
     </div>
     </div>
     </div>
@@ -235,7 +231,6 @@ document.getElementById('recentWork').innerHTML = `
   <li class="li2">${recentWorks.tecnologies[0]}</li>
   <li class="li2">${recentWorks.tecnologies[1]}</li>
   <li class="li2">${recentWorks.tecnologies[2]}</li>
-  <li class="li2">${recentWorks.tecnologies[3]}</li>
 </ul>
 <button type="button" id="btn-project-works" class="see-project-btn">See Project</button>
 </div>`;

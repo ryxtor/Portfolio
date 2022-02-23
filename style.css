@@ -569,8 +569,8 @@ button {
   }
 
   .img-works {
-    min-width: 50%;
-    max-width: 684px;
+    width: 525px;
+    max-width: 120%;
     height: auto;
     float: left;
     padding-top: 114px;
@@ -860,7 +860,7 @@ button {
   }
 
   .popup-img {
-    min-width: 50%;
+    width: auto;
     max-width: 100%;
     height: auto;
     margin: 40px 25px 27px 25px;
